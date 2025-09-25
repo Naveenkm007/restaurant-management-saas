@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offline - Restaurant SaaS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .offline-container {
+      text-align: center;
+      background: white;
+      padding: 3rem 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      max-width: 500px;
+      width: 90%;
+    }
+
+    .icon {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #1a202c;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: #4a5568;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .retry-btn {
+      background: #4f46e5;
+      color: white;
+      border: none;
+      padding: 0.75rem 2rem;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-right: 1rem;
+    }
+
+    .retry-btn:hover {
+      background: #4338ca;
+      transform: translateY(-1px);
+    }
+
+    .cache-btn {
+      background: #e5e7eb;
+      color: #374151;
+      border: none;
+      padding: 0.75rem 2rem;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .cache-btn:hover {
+      background: #d1d5db;
+    }
+
+    .features {
+      margin-top: 2rem;
+      text-align: left;
+    }
+
+    .features h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #1a202c;
+    }
+
+    .feature-list {
+      list-style: none;
+    }
+
+    .feature-list li {
+      padding: 0.5rem 0;
+      color: #4a5568;
+      display: flex;
+      align-items: center;
+    }
+
+    .feature-list li:before {
+      content: '✓';
+      color: #10b981;
+      font-weight: bold;
+      margin-right: 0.75rem;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      background: #fef3c7;
+      color: #92400e;
+      border-radius: 0.5rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      margin-top: 1rem;
+    }
+
+    .status.online {
+      background: #d1fae5;
+      color: #065f46;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    .loading {
+      animation: pulse 2s infinite;
+    }
+
+    @media (max-width: 640px) {
+      .offline-container {
+        padding: 2rem 1.5rem;
+      }
+      
+      h1 {
+        font-size: 1.5rem;
+      }
+      
+      .retry-btn, .cache-btn {
+        width: 100%;
+        margin-bottom: 1rem;
+        margin-right: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="offline-container">
+    <div class="icon">🍽️</div>
+    <h1>You're Offline</h1>
+    <p>
+      No internet connection detected. Some features may be limited, but you can still access cached data and continue working.
+    </p>
+    
+    <div class="buttons">
+      <button class="retry-btn" onclick="retryConnection()">Try Again</button>
+      <button class="cache-btn" onclick="viewCachedData()">View Cached Data</button>
+    </div>
+
+    <div id="connection-status" class="status">
+      <span id="status-text">Checking connection...</span>
+    </div>
+
+    <div class="features">
+      <h3>Available Offline Features:</h3>
+      <ul class="feature-list">
+        <li>View cached menu items and categories</li>
+        <li>Access recent orders (read-only)</li>
+        <li>View restaurant information</li>
+        <li>Browse cached analytics data</li>
+        <li>Access customer information</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    // Check online status
+    function updateConnectionStatus() {
+      const statusEl = document.getElementById('connection-status')
+      const statusText = document.getElementById('status-text')
+      
+      if (navigator.onLine) {
+        statusEl.className = 'status online'
+        statusText.textContent = 'Connection restored!'
+        setTimeout(() => {
+          window.location.reload()
+        }, 1000)
+      } else {
+        statusEl.className = 'status'
+        statusText.textContent = 'Still offline'
+      }
+    }
+
+    function retryConnection() {
+      const button = document.querySelector('.retry-btn')
+      button.textContent = 'Checking...'
+      button.classList.add('loading')
+      
+      // Check connection after a short delay
+      setTimeout(() => {
+        if (navigator.onLine) {
+          window.location.reload()
+        } else {
+          button.textContent = 'Try Again'
+          button.classList.remove('loading')
+          updateConnectionStatus()
+        }
+      }, 1000)
+    }
+
+    function viewCachedData() {
+      // Try to navigate to dashboard which should load cached data
+      window.location.href = '/dashboard'
+    }
+
+    // Listen for online/offline events
+    window.addEventListener('online', () => {
+      updateConnectionStatus()
+    })
+
+    window.addEventListener('offline', () => {
+      updateConnectionStatus()
+    })
+
+    // Check initial status
+    document.addEventListener('DOMContentLoaded', () => {
+      updateConnectionStatus()
+    })
+
+    // Periodically check connection
+    setInterval(updateConnectionStatus, 5000)
+
+    // Service Worker registration check
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.ready.then((registration) => {
+        console.log('Service Worker ready:', registration)
+      })
+    }
+
+    // Handle back button to try returning to app
+    window.addEventListener('popstate', () => {
+      if (navigator.onLine) {
+        window.location.reload()
+      }
+    })
+  </script>
+</body>
+</html>
